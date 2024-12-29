@@ -1,0 +1,80 @@
+% \iffalse meta-comment
+% File: BMsmileys.dtx
+% Author: Bogdan Mizerski
+% Created: 2024-12-26
+% Description: LaTeX package providing emoji macros.
+% \fi
+%
+% \documentclass{ltxdoc}
+% \usepackage{graphicx}
+% \EnableCrossrefs
+% \CodelineIndex
+% \RecordChanges
+%
+% \begin{document}
+	%
+	% \title{The BMsmileys Package}
+	% \author{Bogdan Mizerski}
+	% \date{2024/12/26}
+	% \maketitle
+	%
+	% \section{Introduction}
+	% The \texttt{BMsmileys} package provides a set of macros to include emoji icons in LaTeX documents. The icons are scalable and customizable, making them suitable for use in both academic and creative documents.
+	%
+	% The icons used in this package are sourced from \url{https://uxwing.com}, a free resource for icons.
+	%
+	% \section{Installation}
+	% To use the package:
+	% \begin{enumerate}
+		%   \item Download the package files (\texttt{BMsmileys.sty} and the \texttt{png/} folder).
+		%   \item Place them in the same directory as your \LaTeX\ document or in your local \texttt{texmf} tree.
+		%   \item Include the package in your document with:
+		%   \begin{verbatim}
+		%   \usepackage{BMsmileys}
+		%   \end{verbatim}
+		% \end{enumerate}
+	%
+	% \section{Usage}
+	% The package defines the following macros for icons:
+	%
+	% \DescribeMacro{\IconSmile}
+	% Displays a smiley icon. Example:
+	% \begin{verbatim}
+	% \IconSmile[2]
+	% \end{verbatim}
+	%
+	% \DescribeMacro{\IconHappy}
+	% Displays a happy face emoji.
+	%
+	% \DescribeMacro{\IconSad}
+	% Displays a sad face emoji.
+	%
+	% \StopEventually{}
+	%
+	% \iffalse
+	%<*sty>
+	\ProvidesPackage{BMsmileys}[2024/12/26 v1.0 Emoji macros package]
+
+	\RequirePackage{graphicx}
+
+	% Define macros for icons
+	\providecommand {\IconSmile}[1][1] {\includegraphics[height=#1em]{smiley-icon.png}}
+	\providecommand {\IconHappy}[1][1] {\includegraphics[height=#1em]{happy-icon.png}}
+	\providecommand {\IconSad}[1][1] {\includegraphics[height=#1em]{sad-icon.png}}
+	\providecommand {\IconWink}[1][1] {\includegraphics[height=#1em]{wink-emoji-icon.png}}
+	\providecommand {\IconConfused}[1][1] {\includegraphics[height=#1em]{confused-color-icon.png}}
+	\providecommand {\IconCry}[1][1] {\includegraphics[height=#1em]{cry-icon.png}}
+	\providecommand {\IconSurprised}[1][1] {\includegraphics[height=#1em]{surprised-icon.png}}
+	\providecommand {\IconAngry}[1][1] {\includegraphics[height=#1em]{angry-icon.png}}
+	\providecommand {\IconBlowingKiss}[1][1] {\includegraphics[height=#1em]{face-blowing-a-kiss-emoji-icon.png}}
+	\providecommand {\IconMonsterCartoon}[1][1] {\includegraphics[height=#1em]{monster-cartoon-icon.png}}
+	\providecommand {\IconEvil}[1][1] {\includegraphics[height=#1em]{evil-icon.png}}
+
+	\endinput
+	%</sty>
+	% \fi
+	%
+	% \Finale
+	%
+	% \end{document}
+
